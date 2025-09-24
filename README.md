@@ -9,7 +9,7 @@ The adapter makes the agent persistent, network-addressable, and able to partici
 
 - **GitHub repo with code, configuration, and adapter integration:** ✔️ (this repo)
 - **Screenshot of agent registered and visible on the Nanda Registry chat platform:**  
-  - ⚠️ *Pending due to Registry access issue.* The Nanda Registry account sign‑in / programmatic registration endpoint is currently failing on my account, so I cannot obtain the in‑portal screenshot yet. See **Registry Status & Evidence** below and `myagent.out` for proof that the agent is running and exposing endpoints. A placeholder is included: `assets/nanda_registry_screenshot.png`.
+  - ⚠️ *Pending due to Registry access issue.* The Nanda Registry account sign‑in / programmatic registration endpoint is currently failing on my account, so I cannot obtain the in‑portal screenshot yet. See **Registry Status & Evidence** below and `myagent.out` for proof that the agent is running and exposing endpoints.
 - **Short note explaining what the agent does + feedback:** ✔️ See **What the Agent Does** and **Feedback**.
 
 ---
@@ -148,33 +148,6 @@ curl -k -i https://localhost:6001/api/render
 
 > If you only see **sent** messages but not **agent replies**, ensure `UI_CLIENT_URL` points to your local UI receiver:
 > `export UI_CLIENT_URL="https://localhost:6001/api/receive_message"` and restart the agent.
-
----
-
-## 🪛 Troubleshooting
-
-- **Port 6001 already in use**:
-  ```bash
-  lsof -i :6001
-  kill <PID>    # or: pkill -f run_ui_agent_https
-  ```
-  Then restart, or configure a different UI port if supported.
-
-- **Registry registration (HTTP 501 Unsupported method 'POST')**:
-  - The Registry root path currently rejects POST. Use the **manual assignment link** printed in logs:
-    ```
-    https://chat.nanda-registry.com/landing.html?agentId=<yourId>
-    ```
-  - Once Registry access is restored, open that link to complete assignment and capture the required screenshot.
-
----
-
-## 📸 Screenshots
-
-Add screenshots here once available:
-- `assets/agent_running.png` — agent & endpoints healthy (added by me).
-- `assets/registry_signin_issue.png` — evidence of the sign‑in/POST issue.
-- `assets/nanda_registry_screenshot.png` — **to be added** after Registry access is restored.
 
 ---
 
