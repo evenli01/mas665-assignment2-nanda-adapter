@@ -1,0 +1,61 @@
+nohup: ignoring input
+INFO:httpx:HTTP Request: GET https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json "HTTP/1.1 200 OK"
+🤖 NANDA initialized with custom improvement logic: my_agent_logic
+🔧 Custom improvement logic 'my_agent_logic' registered
+Message improver set to: nanda_custom
+✅ AgentBridge created with custom improve_message_direct: my_agent_logic
+🌐 Detecting server IP address...
+✅ Detected server IP: 3.134.240.151
+🤖 Auto-generated agent ID: agents141376
+🔗 Auto-generated public URL: http://3.134.240.151:6000
+Using registry URL from file: https://chat.nanda-registry.com
+🚀 Starting agent bridge for agents141376 on port 6000...
+🚀 NANDA starting agent_bridge server with custom logic...
+🔧 UI_CLIENT_URL: https://agentcoachteam.com:6001/api/receive_message
+Using registry URL from file: https://chat.nanda-registry.com
+Registering agent agents141376 with URL http://3.134.240.151:6000 at registry https://chat.nanda-registry.com...
+
+🚀 Starting Agent agents141376 bridge on port 6000
+Agent terminal port: 6010
+Message improvement feature is ENABLED
+Logging conversations to /home/ec2-user/mas665-assignment2-nanda-adapter/conversation_logs
+🔧 Using custom improvement logic: my_agent_logic
+Starting A2A server on http://0.0.0.0:6000/a2a
+Google A2A compatibility: Enabled
+ * Serving Flask app 'python_a2a.server.http'
+ * Debug mode: off
+
+==================================================
+🤖 Agent agents141376 is running
+🌐 Server IP: 3.134.240.151
+Agent Bridge URL: http://localhost:6000/a2a
+Public Client API URL: http://3.134.240.151:6000
+==================================================
+
+📡 API Endpoints:
+  GET  https://agentcoachteam.com:6001/api/health - Health check
+  POST https://agentcoachteam.com:6001/api/send - Send a message to the client
+  GET  https://agentcoachteam.com:6001/api/agents/list - List all registered agents
+  POST https://agentcoachteam.com:6001/api/receive_message - Receive a message from agent
+  GET  https://agentcoachteam.com:6001/api/render - Get the latest message
+
+🛑 Press Ctrl+C to stop all processes.
+🔒 Using certificates from current folder: cert=./fullchain.pem, key=./privkey.pem
+🔒 Using SSL certificates from: ./fullchain.pem, ./privkey.pem
+🚀 Starting Flask API server on port 6001...
+ * Serving Flask app 'run_ui_agent_https'
+ * Debug mode: off
+Address already in use
+Port 6001 is in use by another program. Either identify and stop that program, or start the server with a different port.
+✅ Both servers are now running in background threads
+🔧 Agent Bridge: http://localhost:6000
+🔧 Flask API: https://localhost:6001
+🚀 Both servers started successfully!
+📝 Servers are running in background threads
+💡 To run in background, use: python3 script.py &
+******************************************************
+You can assign your agent using this link
+https://chat.nanda-registry.com/landing.html?agentId=agents141376
+******************************************************
+
+SystemExit: 0
