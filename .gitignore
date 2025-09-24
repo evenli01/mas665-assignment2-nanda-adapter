@@ -1,0 +1,7 @@
+
+# runtime logs & outputs
+logs_agents*/
+conversation_logs/
+myagent*.out
+# secrets
+*.pem
