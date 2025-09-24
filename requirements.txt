@@ -1,0 +1,4 @@
+nanda-adapter
+crewai
+crewai-tools
+python-dotenv
